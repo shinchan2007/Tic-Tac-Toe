@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="icon" href="game.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="headline">
+        <h1>
+        <span>Tic</span>
+        <span>Tac</span>
+        <span>Toe</span>
+        </h1>
+    </div>
+    <div class="container">
+        <div class="line">
+            <button onclick="button('b1')" id="b1"></button>
+            <button onclick="button('b2')" id="b2"></button>
+            <button onclick="button('b3')" id="b3"></button>
+        </div>
+        <div class="line">
+            <button onclick="button('b4')" id="b4"></button>
+            <button onclick="button('b5')" id="b5"></button>
+            <button onclick="button('b6')" id="b6"></button>
+        </div>
+        <div class="line">
+            <button onclick="button('b7')" id="b7"></button>
+            <button onclick="button('b8')" id="b8"></button>
+            <button onclick="button('b9')" id="b9"></button>
+        </div>
+    </div>
+    <div class="end"><button id="reset" >Reset</button></div>
+
+    <div class="text"><b id="text"></b></div>
+</body>
+
+<script src="script.js"></script>
+</html>

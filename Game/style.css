@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap');
+h1{
+    
+    justify-content: center;
+}
+.headline{
+    font-family: 'DynaPuff',sans-serif,Arial, Helvetica;
+    display:flex;
+    /* border:1px solid rgb(255, 255, 255); */
+    justify-content: center;
+    margin-bottom: 2vh;
+    color: #cc33ff;
+    font-weight: bolder;
+    font-size: x-large;
+}
+.headline span:hover{
+    
+    text-shadow: 0px 0px 10px rgba(255, 255, 255,1);
+}
+.container{
+    
+    display:grid;
+    width:80%;
+    height:50vh;
+    gap:5%;
+    margin: auto;
+    place-content: center;
+    align-items: center;
+    margin-bottom: 10vh;
+    
+    
+}
+.line{
+    display:flex;
+    gap:5%;
+}
+body{
+    background-color: black;
+}
+button{
+    background-color:#cc33ff ;
+    
+    display: inline-block;
+    width:20vh;
+    height:20vh;
+    min-height: 30px;
+    min-width: 30px;
+    max-width: 100px;
+    max-height: 100px;
+    box-shadow:0px 0px 40px rgba(143, 8, 155, 1);
+    gap:10%;
+    transition: box-shadow 0.7s ease;
+    border: none;
+    border-radius: 20px;
+    border-color:rgba(255, 102, 255, -100);
+    color:aliceblue ;
+    text-shadow: 0px 0px 5px rgba(255, 255, 255,1);
+    
+}
+button:hover{
+    background-color:#df80ff ;
+    transform: translatey(-10px);
+    /*box-shadow: 0px 0px 30px rgba(166, 26, 209,5);*/
+    box-shadow: 0px 0px 30px rgba(255, 255, 255,1);
+
+}
+.end , .text{
+    display: grid;
+    width:80%;
+    margin:auto; 
+    justify-content: center;
+    margin-bottom: 5vh;
+}
+.end button{
+    display: inline-block;
+    width:15vw;
+    height:auto;
+    color:aliceblue ;
+    text-shadow: 0px 0px 10px rgba(255, 255, 255,1);
+
+}
+
+b{
+    color: aliceblue;
+    font-size: large;
+    text-shadow: 0px 0px 5px rgba(255, 255, 255,1);
+    
+}
