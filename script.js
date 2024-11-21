@@ -11,9 +11,31 @@ let button9 = document.getElementById('b9');
 let reset = document.getElementById('reset');
 let t = document.getElementById("text");
 let count=0;
+let bx=document.getElementById("x");
+let bo=document.getElementById("o");
+bx.addEventListener('click',(event)=>{
+    x=true;
+    bx.disabled = true;
+    bo.disabled=true;
+    bo.style.opacity=0.2;
+    bcount+=1;
+});
+let bcount=0;
+bo.addEventListener('click',(event)=>{
+    x=false;
+    bx.disabled = true;
+    bo.disabled=true;
+    bx.style.opacity=0.2;
+    bcount+=1;
+});
 function button(b){
+    bx.disabled = true;
+    bo.disabled=true;
+    if(bcount==0){
+        bx.style.opacity=0.2;
+        bo.style.opacity=0.2;
+    }
     let element = document.getElementById(b);
-
     if(element.textContent==''){
     if(x){
         element.textContent = "X";
@@ -95,9 +117,14 @@ reset.addEventListener('click',(event)=>{
     button7.textContent = '';
     button8.textContent = '';
     button9.textContent = '';
+    bx.disabled = false;
+    bo.disabled=false;
+    bx.style.opacity=1;
+    bo.style.opacity=1;
    x=true;
    for(i of buttons){
     i.disabled = false;
+    bcount=0;
 }
 })
 
