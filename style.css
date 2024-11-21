@@ -92,3 +92,12 @@ b{
 #reset{
     min-width:100px;
 }
+.btn-group{
+    display: flex;
+    justify-content: center;
+    
+}
+.btn-group button{
+    height: 20px;
+    margin:0px 0px 40px 0px;
+}
